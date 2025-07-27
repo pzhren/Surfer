@@ -34,27 +34,28 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"><span class="highlight">Surfer</span>: Progressive Reasoning with World Models for Robotic Manipulation</h1>
+          <h1 class="title is-1 publication-title"><span class="highlight">Surfer</span>: A World Model-Based Framework for Vision-Language Robot Manipulation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               Pengzhen Ren<sup>1</sup>,
-              Kaidong Zhang<sup>1</sup>,
-              Hetao Zheng<sup>1</sup>,
-              Zixuan Li<sup>1</sup>, 
-              Yuhang Wen<sup>1</sup>,
+              Kaidong Zhang<sup>2</sup>,
+              Hetao Zheng<sup>2</sup>,
+              Zixuan Li<sup>3</sup>, 
+              Yuhang Wen<sup>2</sup>,
             </span>
             <span class="author-block">
-              Fengda Zhu<sup>2</sup>,
-              Mas Ma<sup>3</sup>,
-              Xiaodan Liang<sup>1,4*</sup>
+              Fengda Zhu<sup>4</sup>,
+              Mas Ma<sup>5</sup>,
+              Xiaodan Liang<sup>2,1*</sup>
             </span>
           </div>
 
           <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>1</sup>Sun Yat-sen University&nbsp;</span>
-            <span class="author-block"><sup>2</sup>Monash University&nbsp;</span>
-            <span class="author-block"><sup>3</sup>Dataa Robotics&nbsp;</span>
-            <span class="author-block"><sup>4</sup>MBZUAI</span>
+            <span class="author-block"><sup>1</sup>PengCheng Laboratory&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Sun Yat-sen University&nbsp;</span>
+            <span class="author-block"><sup>3</sup>Xi’an Jiaotong University&nbsp;</span>
+            <span class="author-block"><sup>4</sup>ByteDance Ltd&nbsp;</span>
+            <span class="author-block"><sup>5</sup>Hunan Artificial Intelligence and Robotics Institute Co., Ltd&nbsp;</span>
           </div>
 
           <div class="column has-text-centered">
@@ -128,10 +129,17 @@
           Considering how to make the model accurately understand and follow natural language instructions and perform actions consistent with world knowledge is a key challenge in robot manipulation. This mainly includes human fuzzy instruction reasoning and the following of physical knowledge. Therefore, the embodied intelligence agent must have the ability to model world knowledge from training data. However, most existing vision and language robot manipulation methods mainly operate in less realistic simulators and language settings and lack explicit modeling of world knowledge.
           </p>
           <p>
-          To bridge this gap, we introduce a novel and simple robot manipulation framework, called <strong>Surfer</strong>. It is based on the world model, treats robot manipulation as a state transfer of the visual scene, and decouples it into two parts: action and scene. Then, the generalization ability of the model on new instructions and new scenes is enhanced by explicit modeling of the action and scene prediction in multi-modal information. In addition to the framework, we also built a robot manipulation simulator that supports physics execution based on the MuJoCo physics engine. It can automatically generate demonstration training data and test data, effectively reducing labor costs.
-          </p>
-          <p>
-          To conduct a comprehensive and systematic evaluation of the robot manipulation model in terms of language understanding and physical execution, we also created a robotic manipulation benchmark with progressive reasoning tasks, called <strong>SeaWave</strong>. It contains 4 levels of progressive reasoning tasks and can provide a standardized testing platform for embedded AI agents in multi-modal environments. <em>Overall, we hope Surfer can freely surf in the robot's SeaWave benchmark.</em> Extensive experiments show that Surfer consistently outperforms all baselines by a significant margin in all manipulation tasks. On average, Surfer achieved a success rate of 54.74% on the defined four levels of manipulation tasks, exceeding the best baseline performance of 51.07%.
+          Considering how to make the model accurately understand and follow natural language instructions and perform actions consistent with world knowledge is a key challenge in robot manipulation. This mainly includes human fuzzy instruction reasoning and the following of physical knowledge.
+Therefore, the embodied intelligence agent must have the ability to model world knowledge from training data.
+However, most existing vision and language robot manipulation methods mainly operate in less realistic simulators and language settings and lack explicit modelling of world knowledge.
+To bridge this gap, we introduce a novel and simple robot manipulation framework, called \textbf{Surfer}. 
+It is based on the world model, treats robot manipulation as a state transfer of the visual scene, and decouples it into two parts: action and scene. 
+Then, the generalization ability of the model on new instructions and new scenes is enhanced by explicit modeling of the action and scene prediction in multi-modal information.
+In addition, we also built a robot manipulation simulation platform that supports physics execution based on the MuJoCo physics engine.
+It can automatically generate demonstration training data and test data, effectively reducing labor costs. To conduct a comprehensive and systematic evaluation of the visual-language understanding and physical execution of the manipulation model, we also created a robotic manipulation benchmark with different difficulty levels, called \textbf{SeaWave}. It contains four visual-language manipulation tasks of different difficulty levels and can provide a standardized testing platform for embedded AI agents in multi-modal environments.
+\textit{Overall, we hope Surfer can freely surf in the robot's SeaWave benchmark.}
+Extensive experiments show that Surfer consistently outperforms all baselines significantly in all manipulation tasks.
+On average, Surfer achieved a success rate of 54.74\% on the defined four levels of manipulation tasks, exceeding the best baseline performance of 51.07\%. 
           </p>
         </div>
       </div>
