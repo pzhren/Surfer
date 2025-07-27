@@ -1,5 +1,5 @@
-# Surfer: Progressive Reasoning with World Models for Robotic Manipulation
-[[arXiv]](https://arxiv.org/abs/2306.11335) [[Website]](https://necolizer.github.io/RM-PRT/).
+# Surfer: A World Model-Based Framework for Vision-Language Robot Manipulation
+[[arXiv]](https://arxiv.org/abs/2306.11335) [[Website]]([https:](https://pzhren.github.io/Surfer/)).
 
 
 ![](imgs/model.png)
