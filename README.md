@@ -29,14 +29,15 @@ python src/eval.py
 ```
 ## Citation
 ```
-@misc{ren2024surferprogressivereasoningworld,
-      title={Surfer: Progressive Reasoning with World Models for Robotic Manipulation}, 
-      author={Pengzhen Ren and Kaidong Zhang and Hetao Zheng and Zixuan Li and Yuhang Wen and Fengda Zhu and Mas Ma and Xiaodan Liang},
-      year={2024},
-      eprint={2306.11335},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2306.11335}, 
+@ARTICLE{ren2025surfer,
+      author={Ren, Pengzhen and Zhang, Kaidong and Zheng, Hetao and Li, Zixuan and Wen, Yuhang and Zhu, Fengda and Ma, Shikui and Liang, Xiaodan},
+      journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+      title={Surfer: A World Model-Based Framework for Vision-Language Robot Manipulation}, 
+      year={2025},
+      volume={},
+      number={},
+      pages={1-13},
+      doi={10.1109/TNNLS.2025.3594117}
 }
 ```
 
